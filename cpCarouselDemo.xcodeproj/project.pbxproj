@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA7A23B61C6A687C002F181C /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A23B51C6A687C002F181C /* IntroViewController.swift */; };
+		EA7A23B81C6A6DC7002F181C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A23B71C6A6DC7002F181C /* LoginViewController.swift */; };
 		EAB5534A1C6585EE00B96B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB553491C6585EE00B96B92 /* AppDelegate.swift */; };
 		EAB5534C1C6585EE00B96B92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB5534B1C6585EE00B96B92 /* ViewController.swift */; };
 		EAB5534F1C6585EE00B96B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB5534D1C6585EE00B96B92 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA7A23B51C6A687C002F181C /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		EA7A23B71C6A6DC7002F181C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EAB553461C6585EE00B96B92 /* cpCarouselDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cpCarouselDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB553491C6585EE00B96B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAB5534B1C6585EE00B96B92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				EAB553491C6585EE00B96B92 /* AppDelegate.swift */,
 				EAB5534B1C6585EE00B96B92 /* ViewController.swift */,
 				EAB5534D1C6585EE00B96B92 /* Main.storyboard */,
+				EA7A23B71C6A6DC7002F181C /* LoginViewController.swift */,
+				EA7A23B51C6A687C002F181C /* IntroViewController.swift */,
 				EAB553501C6585EE00B96B92 /* Assets.xcassets */,
 				EAB553521C6585EE00B96B92 /* LaunchScreen.storyboard */,
 				EAB553771C6587DB00B96B92 /* Common.swift */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7A23B61C6A687C002F181C /* IntroViewController.swift in Sources */,
 				EAB5534C1C6585EE00B96B92 /* ViewController.swift in Sources */,
 				EAB553781C6587DB00B96B92 /* Common.swift in Sources */,
+				EA7A23B81C6A6DC7002F181C /* LoginViewController.swift in Sources */,
 				EAB5534A1C6585EE00B96B92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +499,7 @@
 				EAB553701C6585EE00B96B92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAB553711C6585EE00B96B92 /* Build configuration list for PBXNativeTarget "cpCarouselDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +508,7 @@
 				EAB553731C6585EE00B96B92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAB553741C6585EE00B96B92 /* Build configuration list for PBXNativeTarget "cpCarouselDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +517,7 @@
 				EAB553761C6585EE00B96B92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
