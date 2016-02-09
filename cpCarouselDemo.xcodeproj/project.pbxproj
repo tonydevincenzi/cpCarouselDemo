@@ -14,6 +14,7 @@
 		EAB553541C6585EE00B96B92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB553521C6585EE00B96B92 /* LaunchScreen.storyboard */; };
 		EAB5535F1C6585EE00B96B92 /* cpCarouselDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB5535E1C6585EE00B96B92 /* cpCarouselDemoTests.swift */; };
 		EAB5536A1C6585EE00B96B92 /* cpCarouselDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB553691C6585EE00B96B92 /* cpCarouselDemoUITests.swift */; };
+		EAB553781C6587DB00B96B92 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB553771C6587DB00B96B92 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EAB553651C6585EE00B96B92 /* cpCarouselDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cpCarouselDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB553691C6585EE00B96B92 /* cpCarouselDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cpCarouselDemoUITests.swift; sourceTree = "<group>"; };
 		EAB5536B1C6585EE00B96B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB553771C6587DB00B96B92 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				EAB5534D1C6585EE00B96B92 /* Main.storyboard */,
 				EAB553501C6585EE00B96B92 /* Assets.xcassets */,
 				EAB553521C6585EE00B96B92 /* LaunchScreen.storyboard */,
+				EAB553771C6587DB00B96B92 /* Common.swift */,
 				EAB553551C6585EE00B96B92 /* Info.plist */,
 			);
 			path = cpCarouselDemo;
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAB5534C1C6585EE00B96B92 /* ViewController.swift in Sources */,
+				EAB553781C6587DB00B96B92 /* Common.swift in Sources */,
 				EAB5534A1C6585EE00B96B92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
