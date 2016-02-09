@@ -10,6 +10,9 @@
 		EA7A23B61C6A687C002F181C /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A23B51C6A687C002F181C /* IntroViewController.swift */; };
 		EA7A23B81C6A6DC7002F181C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A23B71C6A6DC7002F181C /* LoginViewController.swift */; };
 		EA7A23BA1C6A9063002F181C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A23B91C6A9063002F181C /* TutorialViewController.swift */; };
+		EA7A23BC1C6AA1EF002F181C /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A23BB1C6AA1EF002F181C /* TimeLineViewController.swift */; };
+		EA7A23BE1C6AA4B9002F181C /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A23BD1C6AA4B9002F181C /* ConversationsViewController.swift */; };
+		EA7A23C01C6AA638002F181C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A23BF1C6AA638002F181C /* SettingsViewController.swift */; };
 		EAB5534A1C6585EE00B96B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB553491C6585EE00B96B92 /* AppDelegate.swift */; };
 		EAB5534C1C6585EE00B96B92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB5534B1C6585EE00B96B92 /* ViewController.swift */; };
 		EAB5534F1C6585EE00B96B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB5534D1C6585EE00B96B92 /* Main.storyboard */; };
@@ -41,6 +44,9 @@
 		EA7A23B51C6A687C002F181C /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		EA7A23B71C6A6DC7002F181C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA7A23B91C6A9063002F181C /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		EA7A23BB1C6AA1EF002F181C /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		EA7A23BD1C6AA4B9002F181C /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		EA7A23BF1C6AA638002F181C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EAB553461C6585EE00B96B92 /* cpCarouselDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cpCarouselDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB553491C6585EE00B96B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAB5534B1C6585EE00B96B92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +91,8 @@
 		EAB5533D1C6585EE00B96B92 = {
 			isa = PBXGroup;
 			children = (
+				EA7A23BD1C6AA4B9002F181C /* ConversationsViewController.swift */,
+				EA7A23BB1C6AA1EF002F181C /* TimeLineViewController.swift */,
 				EA7A23B91C6A9063002F181C /* TutorialViewController.swift */,
 				EAB553481C6585EE00B96B92 /* cpCarouselDemo */,
 				EAB5535D1C6585EE00B96B92 /* cpCarouselDemoTests */,
@@ -109,6 +117,7 @@
 				EAB553491C6585EE00B96B92 /* AppDelegate.swift */,
 				EAB5534B1C6585EE00B96B92 /* ViewController.swift */,
 				EAB5534D1C6585EE00B96B92 /* Main.storyboard */,
+				EA7A23BF1C6AA638002F181C /* SettingsViewController.swift */,
 				EA7A23B71C6A6DC7002F181C /* LoginViewController.swift */,
 				EA7A23B51C6A687C002F181C /* IntroViewController.swift */,
 				EAB553501C6585EE00B96B92 /* Assets.xcassets */,
@@ -273,10 +282,13 @@
 			files = (
 				EA7A23B61C6A687C002F181C /* IntroViewController.swift in Sources */,
 				EAB5534C1C6585EE00B96B92 /* ViewController.swift in Sources */,
+				EA7A23BC1C6AA1EF002F181C /* TimeLineViewController.swift in Sources */,
+				EA7A23BE1C6AA4B9002F181C /* ConversationsViewController.swift in Sources */,
 				EAB553781C6587DB00B96B92 /* Common.swift in Sources */,
 				EA7A23B81C6A6DC7002F181C /* LoginViewController.swift in Sources */,
 				EA7A23BA1C6A9063002F181C /* TutorialViewController.swift in Sources */,
 				EAB5534A1C6585EE00B96B92 /* AppDelegate.swift in Sources */,
+				EA7A23C01C6AA638002F181C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
