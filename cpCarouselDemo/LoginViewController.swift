@@ -21,7 +21,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     var buttonOffset: CGFloat!
     var signInTitle = ""
     var signInMessage = ""
-    var delayTime = 0.75
+    var delayTime = 0.0
     
     var userCredentials: [String:String] = [
         "emails" : "john@acme.com",
