@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="TiF-P7-KaD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CRp-kr-Hh3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -21,37 +21,37 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile3" id="pyJ-0e-T6d">
-                                        <rect key="frame" x="180" y="373" width="127" height="127"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile4" id="JMz-ms-awW">
-                                        <rect key="frame" x="103" y="477" width="114" height="114"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile5" id="a8F-1T-2JX">
-                                        <rect key="frame" x="-26" y="356" width="136" height="134"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile6" id="ZxD-iV-gCb">
-                                        <rect key="frame" x="70" y="391" width="127" height="125"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile2" id="ysk-Ma-RFv">
-                                        <rect key="frame" x="205" y="474" width="126" height="125"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile1" id="OAj-Og-y9r">
-                                        <rect key="frame" x="-43" y="472" width="153" height="152"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6pd-db-uA0">
                                         <rect key="frame" x="19" y="1065" width="282" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="6Iw-TJ-qVU" kind="push" id="WhO-Ad-lYX"/>
+                                            <segue destination="6Iw-TJ-qVU" kind="push" animates="NO" id="WhO-Ad-lYX"/>
                                         </connections>
                                     </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile3" id="pyJ-0e-T6d">
+                                        <rect key="frame" x="199" y="385" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile4" id="JMz-ms-awW">
+                                        <rect key="frame" x="46" y="462" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile5" id="a8F-1T-2JX">
+                                        <rect key="frame" x="122" y="462" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile6" id="ZxD-iV-gCb">
+                                        <rect key="frame" x="199" y="462" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="intro_tile2" id="ysk-Ma-RFv">
+                                        <rect key="frame" x="199" y="307" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile1" id="OAj-Og-y9r">
+                                        <rect key="frame" x="46" y="307" width="153" height="152"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -90,6 +90,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FGx-kE-chb">
                                 <rect key="frame" x="9" y="22" width="33" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="6Iw-TJ-qVU" eventType="touchUpInside" id="5XL-JH-HA8"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Z7y-Pv-4n1">
                                 <rect key="frame" x="0.0" y="70" width="320" height="509"/>
@@ -119,31 +122,31 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                             </textField>
-                                            <view contentMode="scaleToFill" id="pWT-AI-Vba" userLabel="buttonParentView">
-                                                <rect key="frame" x="0.0" y="382" width="320" height="104"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_buttons" id="bkU-c9-GKE">
-                                                        <rect key="frame" x="1" y="0.0" width="320" height="104"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Kk-of-8zI">
-                                                        <rect key="frame" x="20" y="12" width="282" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <connections>
-                                                            <action selector="signInClicked:" destination="6Iw-TJ-qVU" eventType="touchUpInside" id="wS1-2i-3jh"/>
-                                                        </connections>
-                                                    </button>
-                                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" id="Isl-AQ-7Gs">
-                                                        <rect key="frame" x="203" y="27" width="20" height="20"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </activityIndicatorView>
-                                                </subviews>
-                                            </view>
                                         </subviews>
                                     </view>
                                 </subviews>
                             </scrollView>
+                            <view contentMode="scaleToFill" id="pWT-AI-Vba" userLabel="buttonParentView">
+                                <rect key="frame" x="0.0" y="464" width="320" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_buttons" id="bkU-c9-GKE">
+                                        <rect key="frame" x="1" y="0.0" width="320" height="104"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Kk-of-8zI">
+                                        <rect key="frame" x="20" y="12" width="282" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="signInClicked:" destination="6Iw-TJ-qVU" eventType="touchUpInside" id="wS1-2i-3jh"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" id="Isl-AQ-7Gs">
+                                        <rect key="frame" x="203" y="27" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -154,6 +157,8 @@
                         <outlet property="buttonParentView" destination="pWT-AI-Vba" id="i7V-zX-eNo"/>
                         <outlet property="loginScrollView" destination="Z7y-Pv-4n1" id="5Ue-mf-EAv"/>
                         <outlet property="signInEmailTextField" destination="kL3-Ya-aOM" id="Nqr-bn-SAE"/>
+                        <outlet property="signInFields" destination="8JN-9Q-F3H" id="sG1-uO-7eO"/>
+                        <outlet property="signInNavigation" destination="Otk-tZ-YFk" id="SwV-jZ-9Pw"/>
                         <outlet property="signInPasswordTextField" destination="oYU-UY-XNK" id="lbR-h6-w0o"/>
                         <segue destination="trk-bF-fw0" kind="modal" identifier="signInComplete" id="N2I-Ob-B8x"/>
                     </connections>

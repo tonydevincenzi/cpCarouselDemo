@@ -17,6 +17,9 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var signInPasswordTextField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var signInNavigation: UIImageView!
+    @IBOutlet weak var signInFields: UIView!
+    
     var buttonInitialY: CGFloat!
     var buttonOffset: CGFloat!
     var signInTitle = ""
@@ -37,11 +40,29 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         loginScrollView.contentInset.bottom = 100
         
         buttonInitialY = buttonParentView.frame.origin.y
-        buttonOffset = -120
+        buttonOffset = -220
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let transform = CGAffineTransformMakeScale(0.7, 0.7)
+        signInNavigation.transform = transform
+        signInNavigation.alpha = 1
+        signInFields.transform = transform
+        signInFields.alpha = 1
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.signInNavigation.transform = CGAffineTransformIdentity
+            self.signInNavigation.alpha = 1
+            self.signInFields.transform = CGAffineTransformIdentity
+            self.signInFields.alpha = 1
+        }
     }
     
     @IBAction func signInClicked(sender: AnyObject) {
@@ -98,8 +119,24 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func keyboardWillHide(notification: NSNotification!) {
-        
+        buttonParentView.frame.origin.y = buttonInitialY
     }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        print(scrollView.contentOffset.y)
+        // If the scrollView has been scrolled down by 50px or more...
+        if scrollView.contentOffset.y <= 50 {
+            // Hide the keyboard
+            print("done")
+            view.endEditing(true)
+        }
+    }
+    
+    @IBAction func backClicked(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+//        self.navigationController.popViewControllerAnimated(true)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
