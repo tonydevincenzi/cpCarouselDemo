@@ -91,6 +91,8 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
                 //fail
                 self.signInTitle = "Incorrect Password"
                 self.signInMessage = "Your password did not match the hard-coded and extremely vulnerable value being held in plain text"
+                self.activityIndicator.hidden = true
+                self.activityIndicator.stopAnimating()
                 self.showAlertController()
             }
         }
@@ -134,7 +136,6 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func backClicked(sender: AnyObject) {
         navigationController!.popViewControllerAnimated(true)
-//        self.navigationController.popViewControllerAnimated(true)
     }
     
 

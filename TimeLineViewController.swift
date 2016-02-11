@@ -12,12 +12,15 @@ class TimeLineViewController: UIViewController {
 
     @IBOutlet weak var feedImageView: UIImageView!
     @IBOutlet weak var feedScrollView: UIScrollView!
+    @IBOutlet weak var learnMoreParent: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         feedScrollView.contentSize = feedImageView.image!.size
 
-        // Do any additional setup after loading the view.
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "did_fullscreen")
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "did_swipe")
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "did_share")
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,15 +28,9 @@ class TimeLineViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func closeLearnMoreClicked(sender: AnyObject) {
+        learnMoreParent.hidden = true
+        feedScrollView.frame.origin.y = 64
     }
-    */
 
 }
