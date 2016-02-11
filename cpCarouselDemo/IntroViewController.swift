@@ -68,37 +68,57 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func returnConvertedPos() -> (x: Int, y:Int)
+    {
+        
+//        let scrollTop = -20
+//        let scrollBottom = 568
+//        let x = 0
+//        let y = 0z
+    
+        //let x = CGFloat(0)
+        //let y = CGFloat(0)
+        
+        let xpos = 0
+        let ypos = 0
+        
+        return (xpos, ypos)
+    }
+    
 
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        //-20 start
-        //568 end
         
-        //let transform = CGAffineTransformMakeScale(1, 1)
-        //tileOne.transform = transform
         
-        //attempt to convert value
-        let tileOneY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 307, r2Max: 746)
-        let tileOneX = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 46, r2Max: 46)
-        let tileOneRot = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: -10, r2Max: 0)
+        //Position
+        let tileOneY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 100)
+        let tileOneX = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 100)
+        let tileOneTranslated = CGAffineTransformMakeTranslation(tileOneX, tileOneY)
+        
+        //Scale
+        let tileOneConvertedScale = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 1.2, r2Max: 1)
+        let tileOneScale = CGAffineTransformMakeScale(tileOneConvertedScale, tileOneConvertedScale)
+        
+        //Rotation
+        let tileOneConvertedRotation = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min:0, r2Max:10)
+        let tileOneRotation = CGAffineTransformMakeDegreeRotation(tileOneConvertedRotation)
+        
+        tileOne.transform = CGAffineTransformConcat(tileOneTranslated, CGAffineTransformConcat(tileOneRotation, tileOneScale))
+        
 
-        tileOne.frame.origin.y = tileOneY
-        tileOne.frame.origin.x = tileOneX
-        //tileOne.transform = CGAffineTransformMakeDegreeRotation(tileOneRot)
-        
-        let tileTwoY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 307, r2Max: 746)
-        tileTwo.frame.origin.y = tileTwoY
-        
-        let tileThreeY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 385, r2Max: 824)
-        tileThree.frame.origin.y = tileThreeY
-        
-        let tileFourY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 462, r2Max: 901)
-        tileFour.frame.origin.y = tileFourY
-        
-        let tileFiveY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 462, r2Max: 901)
-        tileFive.frame.origin.y = tileFiveY
-        
-        let tileSixY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 462, r2Max: 901)
-        tileSix.frame.origin.y = tileSixY
+//        let tileTwoY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 307, r2Max: 746)
+//        tileTwo.frame.origin.y = tileTwoY
+//        
+//        let tileThreeY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 385, r2Max: 824)
+//        tileThree.frame.origin.y = tileThreeY
+//        
+//        let tileFourY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 462, r2Max: 901)
+//        tileFour.frame.origin.y = tileFourY
+//        
+//        let tileFiveY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 462, r2Max: 901)
+//        tileFive.frame.origin.y = tileFiveY
+//        
+//        let tileSixY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 462, r2Max: 901)
+//        tileSix.frame.origin.y = tileSixY
     }
     
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
